@@ -14,9 +14,12 @@ This project implements a smart lighting system using Light Dependent Resistors 
 3. Relay module or smart bulbs
 4. Power supply
 5. Connecting wires
+6. independent lighting zones
+7. Adjustable light threshold using onboard potentiometer
+8. Energy-saving concept
+9. Designed for school STEM demonstration
 
-## Circuit Diagram
-![Circuit Diagram](link_to_circuit_diagram)
+
 
 ## Working Principle
 - The LDR senses the ambient light intensity. 
@@ -29,30 +32,28 @@ This project implements a smart lighting system using Light Dependent Resistors 
 3. Upload the code to the microcontroller.
 4. Test the functionality.
 
-## Code Example
-```cpp
-// Sample Arduino code for LDR-based smart lighting
-#include <Arduino.h>
+## Components
+- Arduino UNO
+- 4 LDR Modules
+- 4 LEDs
+- 4 × 220Ω Resistors
+- Jumper wires
 
-const int ldrPin = A0; // LDR connected to analog pin A0
-const int relayPin = 7; // Relay connected to digital pin 7
+## Pin Configuration
 
-void setup() {
-    pinMode(relayPin, OUTPUT);
-    Serial.begin(9600);
-}
+| LDR | Arduino Pin |
+|------|------------|
+| LDR1 D0 | 2 |
+| LDR2 D0 | 3 |
+| LDR3 D0 | 4 |
+| LDR4 D0 | 5 |
 
-void loop() {
-    int ldrValue = analogRead(ldrPin);
-    Serial.println(ldrValue);
-    if (ldrValue < 600) { // Threshold value
-        digitalWrite(relayPin, HIGH); // Turn on light
-    } else {
-        digitalWrite(relayPin, LOW); // Turn off light
-    }
-    delay(1000);
-}
-```
+| LED | Arduino Pin |
+|------|------------|
+| LED1 | 8 |
+| LED2 | 9 |
+| LED3 | 10 |
+| LED4 | 11 |
 
 ## Conclusion
 The LDR-based smart lighting project can greatly improve energy efficiency in homes and other environments. By automatically controlling lighting based on the time of day and occupancy, users can achieve convenience and reduce unnecessary electricity usage.
