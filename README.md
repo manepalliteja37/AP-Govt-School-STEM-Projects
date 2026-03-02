@@ -1,3 +1,9 @@
+![Arduino](https://img.shields.io/badge/Platform-Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen?style=for-the-badge)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![STEM Education](https://img.shields.io/badge/Focus-STEM%20Education-blueviolet?style=for-the-badge)
+
 # AP Govt School STEM Projects  
 ### By MBT – Telugu Mad Thinker
 
